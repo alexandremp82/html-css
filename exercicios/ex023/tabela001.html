@@ -9,22 +9,45 @@
         body{
             font-family: Arial, Helvetica, sans-serif;
         }
+        h1{
+            color: rgb(26, 17, 14);
+            
+        }
 
-        table{
+        #tabela1{
             width: 400px;
             border-collapse: collapse;
+            border: 2px solid rgb(41, 17, 17);
+            
         }
-        tr.linha{
-            background-color: gray;
+        tr.linha0{
+            background-color: rgb(138, 48, 211);
         }
-
-        td{
+        tr.linha1{
+            background-color: brown;
+        }
+        
+        table#tabela1 td{
             border: 1px solid black;
             padding: 8px;
-            text-align: center;
+            text-align: middle;/* alinhamento horizontal*/
+            
         }
-        td.dado{
-            background-color: yellow;
+        #tabela2{
+            width: 400px;
+            height: 400px;
+            border-collapse: collapse;
+            border: 2px solid brown;
+        }
+        table#tabela2 td{
+            border: 1px solid black;
+            background-color: aqua;
+            padding: 8px;
+            text-align: center;/* alinhamento horizontal*/
+            vertical-align: top;/* alinhamento vertical*/
+        }       
+        table#tabela2 .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -37,26 +60,51 @@
             TABLE HEADER = cabeçalho de tabela
             TABLE DATA = dado de tabela
     -->
-    <table>
-        <tr>
+    <table id="tabela1">
+        <tr class="linha0">
             <td>A1</td>
             <td>B1</td>
             <td>C1</td>
         </tr>
-        <tr class="linha">
+        <tr class="linha1">
             <td>A2</td>
             <td>B2</td>
             <td>C2</td>
         </tr>
-        <tr>
+        <tr class="linha0">
             <td>A3</td>
             <td>B3</td>
             <td>C3</td>
         </tr>
-        <tr>
+        <tr class="linha1">
             <td>A4</td>
-            <td class="dado">B4</td>
+            <td>B4</td>
             <td>C4</td>
+        </tr>
+
+    </table>
+    <br>
+
+    <table id="tabela2">
+        <tr class="linha2">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+        <tr class="linha3">
+            <td>A2</td>
+            <td>B2</td>
+            <td class="numero">C2</td>
+        </tr>
+        <tr class="linha2">
+            <td>A3</td>
+            <td>B3</td>
+            <td class="numero">C3</td>
+        </tr>
+        <tr class="linha3">
+            <td>A4</td>
+            <td>B4</td>
+            <td class="numero">C4</td>
         </tr>
 
     </table>
