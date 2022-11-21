@@ -13,6 +13,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
         }
 
@@ -30,6 +31,15 @@
             background-color: gray;
             color: white;
         
+        }
+        thead > tr > th{
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+
+        }
+        tbody tr:nth-child(2n){ /*pode ser odd - impar ou even - par */
+            background-color: lightgray;
         }
         td.num{
             text-align: right;
@@ -193,6 +203,8 @@
 
 
     </tbody>
+    
+   
     <tfoot>
         <tr>
             <th scope="row">Total de Habitantes</th>
@@ -202,5 +214,6 @@
 
     </tfoot>
     </table>
+    
 </body>
 </html>
